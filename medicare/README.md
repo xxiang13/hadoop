@@ -2,6 +2,7 @@
 
 ### Implement the Kmeans clustering algorithm 
 Assume that: 
+<br>
 1)  The number of clusters is given in advance.  
 2)  The input files all reside in one folder. Each record corresponds to a data observation. Each 
 column corresponds to a coordinate of the underlying vector. The coordinates are separated by 
@@ -12,6 +13,7 @@ comma.
 As an external ‘tool’ you are free to use the tool of your choice, but all mapreduce routines must be  written in java. 
 
 You have: 
+<br>
 1)  Write a map reduce job that will execute a single iteration of kKmeans 
 2)  External script that will call this map reduce job many times. The script must take the output of 
 the previous iteration, use it as input to map reduce.  
