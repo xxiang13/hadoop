@@ -1,10 +1,15 @@
-#IBM
+#Google
 
-* Data set comes from IBM and it is a machine learning classification problem. It’s in the csv format. Code gets average value of the fourth column per every different combination of columns 30,31,32,32 among all records with the last column equal to ‘false’.
+## Exercise 1
 
-* Result looks like:
-	1,0,1,1, average value of column 4
-	0,0,1,0, average value of column 4
-	Etc: for all possible combinations of fields 30,31,32,33
+* Mapreduce java routine (most efficient way with a single mapreduce job) that will for each year report the average number of volumes including words containing substrings: ‘nu’, ‘die’, ‘kla’
 
-* The result is equivalent to the sql query: select ave(u[4]), u[30],u[31],u[32],u[33] from u group by u[30],u[31],u[32],u[33] where u[last column] = ‘false’ (u[i] is the i’th column)
+* The data represents the number of occurrences of a particular word (or pairs of words) in a given year in all books available by Google Books. The number of different volumes/books including the word (or pairs of words) is also reported.
+
+* The 1gram file format: word \t year \t number of occurrences \t number of volumes \t potential other irrelevant fields
+
+* The 2 gram file format: word \t word \t year \t number of occurrences \t number of volumes \ potential other irrelevant fields
+
+## Exercise 2
+
+* Mapreduce to compute the standard deviation of all volume values (across all records and both files) using not use more than 2 mapreduce jobs.
